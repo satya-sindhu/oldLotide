@@ -25,7 +25,7 @@ const assertEqual = function(actual, expected) {
         return false;
       }
     
-      for (obj1 of Object.keys(object1)) {
+      for (object1 of Object.keys(object1)) {
         if (object1[obj1].isArray === true && object2[obj1].isArray === true){
           if (eqArrays(object1[obj1], object2[obj1] === false))
             return false
